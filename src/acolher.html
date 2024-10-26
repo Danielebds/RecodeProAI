@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+  <title>Doação - AcolheSUL</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Cabeçalho -->
+  <header class="fixed top-0 w-full bg-red-900 text-white flex justify-between items-center z-10 p-4" style="height: 76px;">
+    <img src="assets/logo.png" alt="Acolhe SUL Logo" class="h-25 ml-2" />
+    
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="./index.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Home</a></li>
+        <li><a href="./acolher.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Doações</a></li>
+        <li><a href="./equipe.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="p-4 pt-20 flex flex-col md:flex-row items-center justify-center">
+    <!-- Informações de Doação -->
+    <div class="md:w-1/2 p-4 flex flex-col items-center md:items-start">
+      <h2 class="text-5xl font-bold text-gray-800 text-center md:text-left">Central de Doação</h2>
+      <div class="mt-4 text-lg text-gray-600">
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+        <p><strong>Telefone:</strong> (XX) XXXXX-XXXX</p>
+        <p><strong>Email:</strong> contato@acolhesul.com</p>
+        <p><strong>Local:</strong> Local de Atendimento</p>
+        <p><strong>Horário de Atendimento:</strong> Seg - Sex, 9h - 17h</p>
+      </div>
+    </div>
+    
+    <!-- Imagem -->
+    <div class="md:w-1/2 p-4 flex justify-center">
+      <img src="assets/doar.avif" alt="Imagem de Doação" class="max-w-full h-auto rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105" />
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="p-4 bg-red-900 text-white text-center">
+    <p>&copy; 2024 Acolhe SUL. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

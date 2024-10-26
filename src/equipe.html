@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+  <title>Equipe - AcolheSUL</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+  
+    .member-card {
+      transition: transform 0.3s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-5px) scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Cabeçalho -->
+  <header class="fixed top-0 w-full bg-red-900 text-white flex justify-between items-center z-10 p-4" style="height: 76px;">
+    <img src="assets/logo.png" alt="Acolhe SUL Logo" class="h-25 ml-2" />
+    
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="./index.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Home</a></li>
+        <li><a href="./acolher.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Doações</a></li>
+        <li><a href="./equipe.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="p-4 pt-20">
+    <section class="mb-4 text-center">
+      <h2 class="text-4xl font-bold underline">Nossa Equipe</h2>
+    </section>
+
+    <!-- Seção de Equipe -->
+    <section class="grid grid-cols-1 my-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-6 justify-items-center">
+      <!-- Membro 1 -->
+      <div class="member-card flex flex-col items-center">
+        <img src="assets/img1.jpg" alt="Nome do Integrante 1" class="w-24 h-24 rounded-full shadow-lg mb-2" />
+        <h3 class="text-lg font-semibold">Nome Completo 1</h3>
+        <p>Estudante</p>
+      </div>
+      <!-- Membro 2 -->
+      <div class="member-card flex flex-col items-center">
+        <img src="assets/img2.jpg" alt="Nome do Integrante 2" class="w-24 h-24 rounded-full shadow-lg mb-2" />
+        <h3 class="text-lg font-semibold">Nome Completo 2</h3>
+        <p>Estudante</p>
+      </div>
+      <!-- Membro 3 -->
+      <div class="member-card flex flex-col items-center">
+        <img src="assets/img3.jpg" alt="Nome do Integrante 3" class="w-24 h-24 rounded-full shadow-lg mb-2" />
+        <h3 class="text-lg font-semibold">Nome Completo 3</h3>
+        <p>Estudante</p>
+      </div>
+      <!-- Membro 4 -->
+      <div class="member-card flex flex-col items-center">
+        <img src="assets/img4.jpg" alt="Nome do Integrante 4" class="w-24 h-24 rounded-full shadow-lg mb-2" />
+        <h3 class="text-lg font-semibold">Daniele Barbosa </h3>
+        <p>Estudante ADS</p>
+      </div>
+      <!-- Membro 5 -->
+      <div class="member-card flex flex-col items-center">
+        <img src="assets/img5.jpg" alt="Nome do Integrante 5" class="w-24 h-24 rounded-full shadow-lg mb-2" />
+        <h3 class="text-lg font-semibold">Nome Completo 5</h3>
+        <p>Estudante</p>
+      </div>
+      <!-- Membro 6 -->
+      <div class="member-card flex flex-col items-center">
+        <img src="assets/img6.jpg" alt="Nome do Integrante 6" class="w-24 h-24 rounded-full shadow-lg mb-2" />
+        <h3 class="text-lg font-semibold">Nome Completo 6</h3>
+        <p>Estudante</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="p-4 bg-red-900 text-white text-center">
+    <p>&copy; 2024 Acolhe SUL. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

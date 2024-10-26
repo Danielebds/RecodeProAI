@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>AcolheSUL</title>
+    <style>
+    
+      .info-box:hover {
+        transform: translateY(-5px) scale(1.05);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+   
+    <header class="fixed top-0 w-full bg-red-900 text-white flex justify-between items-center z-10 p-4" style="height: 76px;">
+        <img src="assets/logo.png" alt="Acolhe SUL Logo" class="h-25 ml-2" />
+        
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Home</a></li>
+            <li><a href="./acolher.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Doações</a></li>
+            <li><a href="./equipe.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Equipe</a></li>
+          </ul>
+        </nav>
+    </header>
+   
+    <main class="main-content pt-20 p-8 flex flex-col items-center">
+      <section class="w-full flex flex-col md:flex-row items-center mt-1">
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img
+            src="assets/acolher.jpg"
+            alt="acolhendo"
+            class="max-w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+
+        <div class="w-full md:w-1/2 p-6 flex flex-col items-center">
+          <h3 class="text-5xl font-bold text-gray-800 mb-4">Acolhe SUL</h3>
+          <p class="text-xl text-gray-600 mb-6">Descubra os pontos de ajuda!</p>
+          <a
+            href="https://wa.me/5581991553247"
+            target="_blank"
+            class="px-6 py-3 border-2 border-gray-800 rounded-lg text-gray-800 hover:bg-green-900 hover:text-white transition text-lg font-semibold"
+          >
+            Entre em Contato pelo WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <!-- Título "Abrigos" -->
+      <h2 class="text-4xl font-bold text-center text-gray-800 mt-12">Abrigos</h2>
+
+      <!-- Quatro Quadros Informativos -->
+      <section class="w-full mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="info-box bg-white p-6 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Abrigos</h3>
+          <p class="text-gray-600">
+            Familias
+            Abrigos
+            especializados em
+            abrigar familias
+            completas
+            </p>
+        </div>
+        <div class="info-box bg-white p-6 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Mulheres e crianças
+          </h3>
+          <p class="text-gray-600">Lugar seguro para
+            mulhres e crianças
+            </p>
+        </div>
+        <div class="info-box bg-white p-6 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Pet
+          </h3>
+          <p class="text-gray-600">Abrigos para pets</p>
+        </div>
+        <div class="info-box bg-white p-6 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Abrigos geral
+          </h3>
+          <p class="text-gray-600">Abrigos no geral</p>
+        </div>
+      </section>
+
+      <!-- Mapa -->
+      <section class="w-full mt-8">
+        <div class="flex justify-center">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345081924!2d144.95373531590462!3d-37.81627997975181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11c91d%3A0x5045675218cee70!2sYour%20Location!5e0!3m2!1sen!2sus!4v1615604516312!5m2!1sen!2sus" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="p-4 bg-red-900 text-white text-center mt-8">
+      <p>&copy; 2024 Acolhe SUL. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
