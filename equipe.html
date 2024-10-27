@@ -33,17 +33,33 @@
 <body class="bg-gray-100">
 
   <!-- Cabeçalho -->
+ 
   <header class="fixed top-0 w-full bg-red-900 text-white flex justify-between items-center z-10 p-5 py-10" style="height: 90px;">
     <img src="assets/logo.png" alt="Acolhe SUL Logo" class="h-auto max-w-xs" />
     
-    <nav>
-      <ul class="flex space-x-4">
-        <li><a href="./index.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Home</a></li>
-        <li><a href="./acolher.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Doações</a></li>
-        <li><a href="./equipe.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Equipe</a></li>
-      </ul>
+    <!-- Botão de Menu para telas pequenas -->
+    <button id="menu-btn" class="block md:hidden  p-2 border-2 border-white rounded-lg" onclick="toggleMenu()">
+        Menu
+    </button>
+    
+    <!-- Menu de Navegação -->
+    <nav id="menu" class="hidden md:flex ml-10 space-x-4">
+        <ul class="flex space-x-4">
+            <li><a href="#" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Home</a></li>
+            <li><a href="./acolher.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Doações</a></li>
+            <li><a href="./equipe.html" class="px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Equipe</a></li>
+        </ul>
     </nav>
 </header>
+
+<!-- Menu dropdown para telas pequenas -->
+<div id="dropdown-menu" class="hidden md:hidden  bg-red-800 text-white w-full">
+    <ul class="flex flex-col my-20 space-y-2 p-4">
+        <li><a href="./index.html" class="block px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Home</a></li>
+        <li><a href="./acolher.html" class="block px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Doações</a></li>
+        <li><a href="./equipe.html" class="block px-4 py-2 border-2 border-white rounded-lg text-white hover:bg-white hover:text-gray-800 transition">Equipe</a></li>
+    </ul>
+</div>
 
   <!-- Conteúdo Principal -->
   <main class="p-4 pt-40">
@@ -101,6 +117,6 @@
   <footer class="p-4 bg-red-900 text-white text-center">
     <p>&copy; 2024 Acolhe SUL. Todos os direitos reservados.</p>
   </footer>
-
+  <script src="index.js"></script>
 </body>
 </html>
